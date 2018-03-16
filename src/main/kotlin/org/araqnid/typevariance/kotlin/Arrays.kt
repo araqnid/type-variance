@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
     fill<Temporal>(arrayOfNulls(2), EPOCH) // Error without "in": expects Array<Temporal>, not Array<Temporal?>
 }
 
-fun copy(from: Array<out Any>, to: Array<Any>) {
+fun <T> copy(from: Array<out T>, to: Array<T>) {
     // l-value from[0] is forbidden to access
     // (as if type of input use site was Nothing)
     assert(from.size == to.size)

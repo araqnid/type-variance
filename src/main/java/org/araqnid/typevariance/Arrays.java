@@ -2,9 +2,20 @@ package org.araqnid.typevariance;
 
 import java.time.Instant;
 import java.time.temporal.Temporal;
+import java.util.Iterator;
 
 public class Arrays {
-    public static void main() {
+    public static int count(Iterable<?> iterable) {
+        int size = 0;
+        Iterator<?> iter = iterable.iterator();
+        while (iter.hasNext()) {
+            @SuppressWarnings("unused") Object x = iter.next();
+            size++;
+        }
+        return size;
+    }
+
+    public static void main(String[] args) {
         Integer[] ints = new Integer[] { 1, 2, 3 };
         Object[] any = new Object[3];
         Arrays.copy(ints, any); // Java arrays are covariant

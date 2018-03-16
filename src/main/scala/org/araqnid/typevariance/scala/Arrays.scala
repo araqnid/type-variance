@@ -6,11 +6,11 @@ import java.time.temporal.Temporal
 object Arrays {
   val ints: Array[Int] = Array(1, 2, 3)
   val any: Array[Any] = Array("", "", "")
-  copy(ints, any) // Error without "_ <: Any"
+  copy(ints, any)
 
   fill[Temporal](Array[Temporal](null, null), EPOCH)
 
-  def copy(from: Array[_ <: Any], to: Array[Any]): Unit = {
+  def copy[T](from: Array[_ <: T], to: Array[T]): Unit = {
     assert(from.length == to.length)
     from.indices.foreach { i =>
       to(i) = from(i)
