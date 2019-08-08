@@ -7,7 +7,7 @@ import org.araqnid.typevariance.{BasicEvent, Event}
 import scala.reflect.ClassTag
 
 trait EventHandler[-E] {
-  def accept(event: E, timestamp: Instant)
+  def accept(event: E, timestamp: Instant): Unit
 }
 
 object EventHandlers {
