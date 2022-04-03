@@ -1,11 +1,11 @@
 plugins {
-    kotlin("jvm") version "1.3.61"
+    kotlin("jvm") version "1.6.20"
     scala
     groovy
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 java {
@@ -46,7 +46,7 @@ tasks {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(kotlin("reflect"))
-    implementation("org.scala-lang:scala-library:2.13.1")
+    implementation("org.scala-lang:scala-library:2.13.8")
     implementation(localGroovy())
 
     testImplementation("junit:junit:4.12")
