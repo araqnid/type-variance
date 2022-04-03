@@ -49,7 +49,7 @@ dependencies {
     implementation("org.scala-lang:scala-library:2.13.8")
     implementation(localGroovy())
 
-    testImplementation("junit:junit:4.12")
+    testImplementation("junit:junit:4.13.2")
     testImplementation("org.hamcrest:hamcrest-library:1.3")
     testImplementation("com.natpryce:hamkrest:1.7.0.0")
     testImplementation("org.scalatest:scalatest_2.13:3.1.0")
