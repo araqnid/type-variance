@@ -51,6 +51,6 @@ dependencies {
 
     testImplementation("junit:junit:4.12")
     testImplementation("org.hamcrest:hamcrest-library:1.3")
-    testImplementation("com.natpryce:hamkrest:1.7.0.0")
+    testImplementation("com.natpryce:hamkrest:1.8.0.1")
     testImplementation("org.scalatest:scalatest_2.13:3.1.0")
 }
