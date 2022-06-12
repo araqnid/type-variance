@@ -3,7 +3,7 @@ package org.araqnid.typevariance.kotlin
 import java.time.Instant.EPOCH
 import java.time.temporal.Temporal
 
-fun main(args: Array<String>) {
+fun main() {
     val ints: Array<Int> = arrayOf(1, 2, 3)
     val any = Array<Any>(3) { "" }
     copy(ints, any) // Error without "out": expects (Array<Any>, Array<Any>)
