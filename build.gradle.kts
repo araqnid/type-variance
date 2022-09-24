@@ -46,7 +46,7 @@ tasks {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(kotlin("reflect"))
-    implementation("org.scala-lang:scala-library:2.13.8")
+    implementation("org.scala-lang:scala-library:2.13.9")
     implementation(localGroovy())
 
     testImplementation("junit:junit:4.13.2")
